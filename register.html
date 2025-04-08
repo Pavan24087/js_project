@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .reg_form{
+            background: rgba(64,64,64,0,15);
+            border: 3px solid lightslategrey;
+            padding: 30px;
+            border-radius: 16px;
+            backdrop-filter: blur(30px);
+            text-align: center;
+            color: white;
+            width: 400px;
+            box-shadow: 0 0 20px 10px rgba(0,0,0,0,15);
+        }
+        .register_title{
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        .inp_box{
+            margin: 20px 0;
+            position: relative;
+        }
+        .inp_box>input{
+            width: 100%;
+            background-color:rgba(255,255,255,0.1) ;
+            border: none;
+            padding: 12px 12px 12px 45px;
+            border-radius: 99px;
+            outline: 3px solid transparent;
+            transition: 0.3s;
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+        }
+        .inp_box>input:focus{
+            outline: 3px solid rgba(255,255,255,0.3);
+        }
+        .inp_box>input::-ms-reveal{
+            filter: invert(100%);
+        }
+        .inp_box>i{
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: rgba(255,255,255,0.8);
+        }
+        .reg_btn{
+            width: 100%;
+            padding: 10px 0;
+            background: lightseagreen;
+            border: none;
+            border-radius: 100px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .reg_btn:hover{
+            background: #0b87ec;
+        }
+    </style>
+</head>
+<body>
+    <form action="index.html" class="reg_form">
+        <h1 class="register_title">Register</h1>
+        <div class="inp_box">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="" placeholder="Username">
+        </div>
+
+        <div class="inp_box">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="" placeholder="Enter email">
+        </div>
+
+        <div class="inp_box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="" placeholder="password">
+        </div>
+
+        <button class="reg_btn">Register</button>
+    </form>
+</body>
+</html>
